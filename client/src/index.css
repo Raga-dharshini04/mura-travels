@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import "@fontsource/libre-baskerville/400.css";
+@import "@fontsource/libre-baskerville/700.css";
+@import "@fontsource/dm-sans/300.css";
+@import "@fontsource/dm-sans/400.css";
+@import "@fontsource/dm-sans/500.css";
+
+:root {
+  --forest: #1A2B1A;
+  --moss: #243824;
+  --moss-2: #2E4A2E;
+  --moss-3: #344D34;
+  --gold: #D4AF37;
+  --gold-light: #F0C842;
+  --gold-dim: rgba(212,175,55,0.15);
+  --terra: #8B2500;
+  --terra-dim: rgba(139,37,0,0.15);
+  --cream: #FFF5E6;
+  --cream-dim: rgba(255,245,230,0.65);
+  --cream-faint: rgba(255,245,230,0.08);
+  --sand: #F5EDD8;
+  --warm-gray: #9A8F7E;
+  --border-gold: rgba(212,175,55,0.25);
+  --border-cream: rgba(255,245,230,0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--forest);
+  color: var(--cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Libre Baskerville', serif;
+  color: var(--cream);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--moss); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+::selection { background: var(--gold); color: var(--forest); }
